@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pameger Barbershop — Cukur ganteng tanpa antre. Booking jadwal cukur online via WhatsApp dengan barber profesional. Tempat nyaman ber-AC.">
+    <meta name="keywords" content="barbershop, cukur rambut, booking online, pameger barbershop, barber profesional">
+    <title>Pameget Barbershop — Booking Cukur Online</title>
+
+    <!-- Google Fonts: Inter + Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =============================================
+         NAVBAR — Sticky navigation with hamburger menu
+    ============================================= -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <!-- Logo -->
+            <a href="#home" class="navbar__logo">
+                <i class="fas fa-cut"></i>
+                <span>Pameget</span> Barbershop
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="navbar__menu" id="navMenu">
+                <li><a href="#home" class="navbar__link active">Home</a></li>
+                <li><a href="#keunggulan" class="navbar__link">Keunggulan</a></li>
+                <li><a href="#testimoni" class="navbar__link">Testimoni</a></li>
+                <li><a href="#lokasi" class="navbar__link">Lokasi</a></li>
+                <li><a href="#kontak" class="navbar__link">Kontak</a></li>
+                <!-- Mobile-only CTA inside menu -->
+                <li class="navbar__menu-cta">
+                    <a href="#booking" class="btn btn--primary btn--sm">Booking Sekarang</a>
+                </li>
+            </ul>
+
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- =============================================
+         HERO SECTION — Full-screen banner with CTA
+    ============================================= -->
+    <header class="hero" id="home">
+        <!-- Background overlay for readability -->
+        <div class="hero__overlay"></div>
+
+        <div class="container hero__content">
+            <!-- Decorative badge -->
+            <div class="hero__badge">
+                <i class="fas fa-star"></i> Barbershop Terpercaya Sejak 2020
+            </div>
+
+            <h1 class="hero__title">
+                Cukur Ganteng<br>
+                <span class="hero__title--accent">Tanpa Antre</span><br>
+                di Pameget Barbershop
+            </h1>
+
+            <p class="hero__subtitle">
+                Ubah gaya rambutmu dengan barber profesional. Pesan jadwalmu sekarang
+                secara online dan datang langsung tanpa perlu menunggu lama.
+            </p>
+
+            <div class="hero__actions">
+                <a href="https://wa.me/628xxxxxxxxxx?text=Halo%20Pameget%20Barbershop,%20saya%20mau%20booking%20jadwal%20cukur." class="btn btn--primary btn--lg" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i> Booking Sekarang via WhatsApp
+                </a>
+                <a href="#keunggulan" class="btn btn--outline btn--lg">
+                    Kenapa Kami? <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="hero__scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-mouse__wheel"></div>
+                </div>
+                <span>Scroll ke bawah</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============================================
+         KEUNGGULAN SECTION — 3-column feature cards
+    ============================================= -->
+    <section class="features" id="keunggulan">
+        <div class="container">
+            <!-- Section header -->
+            <div class="section-header">
+                <span class="section-header__tag">Mengapa Memilih Kami</span>
+                <h2 class="section-header__title">Keunggulan <span>Pameget Barbershop</span></h2>
+                <p class="section-header__desc">
+                    Kami memberikan pengalaman cukur terbaik dengan pelayanan profesional
+                    dan fasilitas premium.
+                </p>
+            </div>
+
+            <!-- Feature cards grid -->
+            <div class="features__grid">
+                <!-- Card 1: Barber Profesional -->
+                <article class="feature-card" data-aos="fade-up">
+                    <div class="feature-card__icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="feature-card__title">Barber Profesional</h3>
+                    <p class="feature-card__desc">
+                        Capster berpengalaman dan ramah yang siap memberikan hasil potongan terbaik
+                        sesuai dengan style yang kamu inginkan.
+                    </p>
+                    <div class="feature-card__decoration"></div>
+                </article>
+
+                <!-- Card 2: Tempat Nyaman -->
+                <article class="feature-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="feature-card__icon feature-card__icon--blue">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3 class="feature-card__title">Tempat Nyaman & AC</h3>
+                    <p class="feature-card__desc">
+                        Fasilitas bersih dengan ruangan ber-AC, musik santai, dan suasana
+                        yang nyaman untuk relaksasi saat dicukur.
+                    </p>
+                    <div class="feature-card__decoration feature-card__decoration--blue"></div>
+                </article>
+
+                <!-- Card 3: Booking Online -->
+                <article class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card__icon feature-card__icon--gradient">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="feature-card__title">Booking Online Mudah</h3>
+                    <p class="feature-card__desc">
+                        Cukup pesan lewat WhatsApp, pilih jam yang tersedia, dan datang
+                        tepat waktu tanpa perlu antre berjam-jam di lokasi.
+                    </p>
+                    <div class="feature-card__decoration feature-card__decoration--gradient"></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         TESTIMONI SECTION — Customer review cards
+    ============================================= -->
+    <section class="testimonials" id="testimoni">
+        <div class="container">
+            <!-- Section header -->
+            <div class="section-header">
+                <span class="section-header__tag">Apa Kata Mereka</span>
+                <h2 class="section-header__title">Testimoni <span>Pelanggan Kami</span></h2>
+                <p class="section-header__desc">
+                    Kepuasan pelanggan adalah prioritas utama kami. Lihat apa yang mereka katakan!
+                </p>
+            </div>
+
+            <!-- Testimonial cards grid -->
+            <div class="testimonials__grid">
+                <!-- Testimonial Card 1 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-card__quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Mantap banget hasilnya! Barbernya ramah dan ngerti banget model rambut yang cocok buat muka gue. Tempatnya juga nyaman, nggak gerah. Pasti balik lagi!"
+                    </p>
+                    <div class="testimonial-card__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-card__author">
+                        <img src="https://i.pravatar.cc/100?img=11" alt="Foto Rizky Pratama" class="testimonial-card__avatar" loading="lazy">
+                        <div>
+                            <h4 class="testimonial-card__name">Rizky Pratama</h4>
+                            <span class="testimonial-card__role">Pelanggan Setia</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Testimonial Card 2 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-card__quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Booking via WhatsApp super gampang. Tinggal chat, pilih jam, dateng langsung potong. Nggak perlu nunggu lama kayak barbershop lain. Top banget!"
+                    </p>
+                    <div class="testimonial-card__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-card__author">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Foto Andi Saputra" class="testimonial-card__avatar" loading="lazy">
+                        <div>
+                            <h4 class="testimonial-card__name">Andi Saputra</h4>
+                            <span class="testimonial-card__role">Mahasiswa</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Testimonial Card 3 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-card__quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Saya bawa anak saya potong rambut di sini, barbernya sabar banget handle anak-anak. Hasilnya rapi dan anak saya juga senang. Recommended!"
+                    </p>
+                    <div class="testimonial-card__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-card__author">
+                        <img src="https://i.pravatar.cc/100?img=53" alt="Foto Budi Setiawan" class="testimonial-card__avatar" loading="lazy">
+                        <div>
+                            <h4 class="testimonial-card__name">Budi Setiawan</h4>
+                            <span class="testimonial-card__role">Karyawan Swasta</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Testimonial Card 4 -->
+                <article class="testimonial-card">
+                    <div class="testimonial-card__quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-card__text">
+                        "Harga terjangkau tapi kualitas potongannya premium. Barbernya juga kasih saran model rambut yang cocok. Sudah langganan dari awal buka!"
+                    </p>
+                    <div class="testimonial-card__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-card__author">
+                        <img src="https://i.pravatar.cc/100?img=33" alt="Foto Dimas Ardiansyah" class="testimonial-card__avatar" loading="lazy">
+                        <div>
+                            <h4 class="testimonial-card__name">Dimas Ardiansyah</h4>
+                            <span class="testimonial-card__role">Freelancer</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         LOKASI SECTION — Google Maps embed + details
+    ============================================= -->
+    <section class="location" id="lokasi">
+        <div class="container">
+            <!-- Section header -->
+            <div class="section-header">
+                <span class="section-header__tag">Temukan Kami</span>
+                <h2 class="section-header__title">Lokasi <span>& Jam Operasional</span></h2>
+                <p class="section-header__desc">
+                    Kunjungi kami di lokasi yang strategis dan mudah dijangkau.
+                </p>
+            </div>
+
+            <div class="location__content">
+                <!-- Google Maps Embed -->
+                <div class="location__map">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.0130202693529!2d106.56283780932424!3d-6.260300107166547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fda39fb17301%3A0xc6278b6a916d1343!2sPameget%20Barbershop!5e0!3m2!1sid!2sid!4v1782464299329!5m2!1sid!2sid"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Lokasi Pameget Barbershop">
+                    </iframe>
+                </div>
+
+                <!-- Location Details -->
+                <div class="location__details">
+                    <!-- Address Card -->
+                    <div class="location-info-card">
+                        <div class="location-info-card__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Alamat</h3>
+                            <p>Jl. Curug Wetan, RT.001/RW/RW.01, Curug Wetan, Kec. Curug,<br>Kabupaten Tangerang, Jawa Barat 15810</p>
+                        </div>
+                    </div>
+
+                    <!-- Operating Hours Card -->
+                    <div class="location-info-card">
+                        <div class="location-info-card__icon location-info-card__icon--blue">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Jam Operasional</h3>
+                            <ul class="operating-hours">
+                                <li><span>Senin – Jumat</span><strong>09:00 – 21:00</strong></li>
+                                <li><span>Sabtu</span><strong>08:00 – 22:00</strong></li>
+                                <li><span>Minggu</span><strong>10:00 – 20:00</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Card -->
+                    <div class="location-info-card" id="kontak">
+                        <div class="location-info-card__icon location-info-card__icon--gradient">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Kontak</h3>
+                            <p>
+                                <i class="fab fa-whatsapp"></i> +62 812-3456-7890<br>
+                                <i class="fas fa-envelope"></i> info@pamegetbarbershop.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         BOOKING CTA SECTION — Main action section
+    ============================================= -->
+    <section class="booking-cta" id="booking">
+        <div class="container booking-cta__inner">
+            <!-- Decorative elements -->
+            <div class="booking-cta__decoration">
+                <i class="fas fa-cut"></i>
+            </div>
+
+            <h2 class="booking-cta__title">
+                Siap Tampil Lebih <span>Keren?</span>
+            </h2>
+            <p class="booking-cta__desc">
+                Jangan buang waktu menunggu. Booking jadwal cukurmu sekarang via WhatsApp
+                dan datang langsung tanpa antre!
+            </p>
+
+            <a href="https://wa.me/6281234568796?text=Halo%20Pameget%20Barbershop,%20saya%20mau%20booking%20jadwal%20cukur.%0ANama:%20%0ATanggal:%20%0AJam:%20" class="btn btn--whatsapp btn--xl" target="_blank" rel="noopener" id="mainBookingBtn">
+                <i class="fab fa-whatsapp"></i>
+                Booking Sekarang via WhatsApp
+            </a>
+
+            <p class="booking-cta__note">
+                <i class="fas fa-bolt"></i> Respon cepat dalam hitungan menit!
+            </p>
+        </div>
+    </section>
+
+    <!-- =============================================
+         FOOTER — Copyright and social links
+    ============================================= -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <!-- Footer branding -->
+            <div class="footer__brand">
+                <a href="#home" class="footer__logo">
+                    <i class="fas fa-cut"></i>
+                    <span>Pameger</span> Barbershop
+                </a>
+                <p class="footer__tagline">Cukur ganteng, tanpa ribet.</p>
+            </div>
+
+            <!-- Footer links -->
+            <div class="footer__links">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#keunggulan">Keunggulan</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                    <li><a href="#lokasi">Lokasi</a></li>
+                </ul>
+            </div>
+
+            <!-- Social media links -->
+            <div class="footer__social">
+                <h4>Ikuti Kami</h4>
+                <div class="footer__social-icons">
+                    <a href="https://instagram.com/pamegerbarbershop" target="_blank" rel="noopener" aria-label="Instagram Pameger Barbershop">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/pamegerbarbershop" target="_blank" rel="noopener" aria-label="Facebook Pameger Barbershop">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://tiktok.com/@pamegerbarbershop" target="_blank" rel="noopener" aria-label="TikTok Pameger Barbershop">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/628xxxxxxxxxx" target="_blank" rel="noopener" aria-label="WhatsApp Pameger Barbershop">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Pameger Barbershop. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =============================================
+         FLOATING WHATSAPP BUTTON — Always visible
+    ============================================= -->
+    <a href="https://wa.me/6281234568796?text=Halo%20Pameger%20Barbershop,%20saya%20mau%20booking%20jadwal%20cukur." class="floating-wa" target="_blank" rel="noopener" aria-label="Chat WhatsApp" id="floatingWA">
+        <i class="fab fa-whatsapp"></i>
+        <span class="floating-wa__tooltip">Chat Kami!</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
